@@ -1,0 +1,52 @@
+.line{
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  background: blueviolet;
+}
+.line-1{
+  z-index: 15;
+  opacity: 0.5;
+}
+.line-2{
+  z-index: 10;
+  opacity: 0.7;
+}
+.line-3{
+  z-index: 5;
+}
+.wave{
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat : repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+.wave1{
+  -webkit-background-size: 50% 80px;
+  background-size: 50% 80px;
+}
+.wave2{
+  -webkit-background-size: 50% 100px;
+  background-size: 50% 100px;
+  animation: animate 12s linear infinite;
+}
+.wave3{
+  -webkit-background-size: 50% 80px;
+  background-size: 50% 80px;
+  animation: animate 18s linear infinite;
+}
+@keyframes animate{
+  0%{
+      transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50%{
+      transform: translateX(-25%) translateZ(0) scaleY(0.5);
+  }
+  100%{
+      transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
