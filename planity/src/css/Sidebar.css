@@ -11,12 +11,8 @@
   transition: left 1s ease;
   box-shadow: 1px 0 0 0 white;
 }
-.sidebar.open {
+.side:hover .sidebar {
   left: 0;
-}
-
-.sidebar.closed {
-  left: -270px;
 }
 button {
   background: none;

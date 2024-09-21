@@ -10,7 +10,7 @@ const Navbar = () => {
   };
   return (
     <nav className="user-navbar">
-      <div className="navbar-logo">Trello</div>
+      <div className="navbar-logo">Planity</div>
       <div className="navbar-items">
         <a href="#boards" className="navbar-item">
           My Boards
