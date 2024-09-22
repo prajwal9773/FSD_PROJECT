@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import "../css/Navbar.css"; // Optional: Add your CSS file
+import "../css/Navbar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -19,14 +21,26 @@ const Navbar = () => {
           Create Board
         </a>
       </div>
-      <div className="profile-section" onClick={toggleDropdown}>
-        <span className="profile-icon">PR</span> {/* Profile initials */}
+      <div className="profile">
+        <FontAwesomeIcon icon={faBell} className="bell"/>
+        
+        <div class="box-3">
+          <div class="btn btn-three">
+            <span>Upgrade to Pro</span>
+          </div>
+        </div>
+        <div className="profile-section" onClick={toggleDropdown}>
+          <span className="profile-icon">PR</span>
+        </div>
       </div>
 
-      {/* Dropdown Menu */}
-      <div className={`dropdown-menu ${dropdownOpen ? 'open' : ''}`}>
-        <a href="#settings" className="dropdown-item">Settings</a>
-        <a href="#logout" className="dropdown-item">Logout</a>
+      <div className={`dropdown-menu ${dropdownOpen ? "open" : ""}`}>
+        <a href="#settings" className="dropdown-item">
+          Settings
+        </a>
+        <a href="#logout" className="dropdown-item">
+          Logout
+        </a>
       </div>
     </nav>
   );
