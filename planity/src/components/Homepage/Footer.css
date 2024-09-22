@@ -1,0 +1,45 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f1f5f9; /* Slate-100 equivalent */
+    border-top: 1px solid #e5e7eb; /* Border color */
+    padding: 10px 20px;
+  }
+  
+  .footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .custom-button {
+    background-color: transparent;
+    color: #4b5563; 
+    padding: 10px 20px;
+    border: 2px solid #4b5563; 
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 5px;
+    border-radius: 20px;
+  }
+  
+  .custom-button:hover {
+    background-color: #4b5563; /* Gray-600 on hover */
+    color: white;
+  }
+  
+  .custom-button:focus {
+    outline: none;
+    border-color: #1f2937; /* Darker color when focused */
+  }
+  
