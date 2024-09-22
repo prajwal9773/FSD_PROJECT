@@ -14,7 +14,7 @@ export default function Navbar() {
                 </a>
             </div>
             <a href="/signup">
-              <button className="mt-2 bg-neutral-800 text-white py-2 px-4 rounded-md mr-4">
+              <button className="mt-2 bg-neutral-800 text-white py-2 px-2 rounded-md mr-2">
                 Signup
               </button>
             </a>
