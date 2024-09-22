@@ -6,7 +6,8 @@
   position: absolute;
   z-index: 99;
   width: 100%;
-  box-shadow: 0 0 0 1px white;
+  box-shadow: 0 0 0 0.5px white;
+  backdrop-filter: blur(10px);
 }
 
 .navbar-logo {
