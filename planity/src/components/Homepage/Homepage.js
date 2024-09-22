@@ -20,7 +20,7 @@ const HomePage = () => {
         <div className="text-3xl md:text-6xl bg-gradient-to-r from-fuchsia-500 to-pink-500 text-white px-4 p-2 rounded-md pb-4 w-fit">
           Workforward
         </div>
-        <div className="text-sm md:text-xl text-neutral-500 mt-4 max-w-3xl ms:max-w-2xl" style={{width:'500px'}}>
+        <div className="text-sm md:text-xl text-neutral-500 mt-4 max-w-3xl ms:max-w-2xl" style={{width:'700px'}}>
           Welcome to Planity(Project management), your all-in-one platform for
           streamlining tasks, tracking progress, and boosting team
           collaboration. Manage projects efficiently with intuitive dashboards
