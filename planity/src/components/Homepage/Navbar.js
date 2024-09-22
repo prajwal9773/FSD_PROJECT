@@ -8,13 +8,13 @@ export default function Navbar() {
             logo
             <div className=' md:block mx:auto flex items-center justify-between w-full ' style={{ marginLeft: '1320px'}}>
                 <a href="/login">
-                 <button className="mt-2 bg-neutral-800 text-white py-2 px-4 rounded-md">
+                 <button className="mt-2 bg-neutral-800 text-white py-2 px-4 rounded-md mr-2">
                     Login
                  </button>
                 </a>
             </div>
             <a href="/signup">
-              <button className="mt-2 bg-neutral-800 text-white py-2 px-4 rounded-md">
+              <button className="mt-2 bg-neutral-800 text-white py-2 px-4 rounded-md mr-4">
                 Signup
               </button>
             </a>
