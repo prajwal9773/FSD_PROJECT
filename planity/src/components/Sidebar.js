@@ -60,7 +60,7 @@ const Sidebar = () => {
           </div>
         </div>
         <div className="button">
-          <button class="button-64" role="button">
+          <button class="button-64">
             <span class="text">Upgrade to Planity Pro</span>
           </button>
         </div>

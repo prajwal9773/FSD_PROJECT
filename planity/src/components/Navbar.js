@@ -6,7 +6,6 @@ import { faBell } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  // Toggle the dropdown menu
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
@@ -30,7 +29,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="profile-section" onClick={toggleDropdown}>
-          <span className="profile-icon">PR</span>
+          <p className="profile-icon">PR</p>
         </div>
       </div>
 

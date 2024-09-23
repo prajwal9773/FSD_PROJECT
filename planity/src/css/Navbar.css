@@ -50,33 +50,14 @@
   cursor: pointer;
   position: relative;
 }
-
-/* .pro{
-  height:30px;
-  width: 125px;
-  margin: 10px;
-  text-align: center;
-  background: none;
-  border: 2px solid white;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.pro:hover{
-  -webkit-box-shadow: 11px 8px 48px -4px rgba(0,0,0,0.75);
--moz-box-shadow: 11px 8px 48px -4px rgba(0,0,0,0.75);
-box-shadow: 11px 8px 48px -4px rgba(0,0,0,0.75);
-} */
-/* .pro:active{
-  box-shadow: 0 0 0 0.25rem rgba(130,138,145,.5);
-} */
 .profile-icon {
   background-color: #f0f0f0;
   color: #333;
   border-radius: 50%;
   padding: 10px;
   font-weight: bold;
-  width: 20px;
-  height: 20px;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
