@@ -20,14 +20,14 @@ const Sidebar = () => {
         <p className="heading">Workspace</p>
         <div className="boardlist">
           <div className="members">
-            <div className="mem">
+            <div className="mem" id="box">
               <FontAwesomeIcon icon={faUser} className="memb" />
               <p>Members</p>
             </div>
             <div className="plus">+</div>
           </div>
           <div>
-            <div className="workspace" onClick={toggleDropdown}>
+            <div className="workspace" onClick={toggleDropdown} id="box">
               <div className="settings">
                 <FontAwesomeIcon icon={faGear} className="set" />
                 <p>Workspace settings</p>
@@ -44,18 +44,18 @@ const Sidebar = () => {
           <div className="views">
             <h5 className="vie">Workspace Views</h5>
             <div className="view">
-              <div className="table">
+              <div className="table" id="box">
                 <FontAwesomeIcon icon={faTable} className="tab" />
                 <p>Table</p>
               </div>
-              <div className="table">
+              <div className="table" id="box">
                 <FontAwesomeIcon icon={faCalendar} className="tab" />
                 <p>Calendar</p>
               </div>
             </div>
           </div>
           <div className="newboard">
-            <p style={{ fontWeight: "bold" }}>Your Boards</p>
+            <p style={{ fontWeight: "bold" }}>Boards</p>
             <div className="plus">+</div>
           </div>
         </div>

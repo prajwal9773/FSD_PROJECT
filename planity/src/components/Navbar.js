@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../css/Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
-
+import PlanityImage from "../img/planity.png"
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -11,7 +11,7 @@ const Navbar = () => {
   };
   return (
     <nav className="user-navbar">
-      <div className="navbar-logo">Planity</div>
+      <div className="navbar-logo"><img src={PlanityImage} alt="Planity Logo" style={{ height: "30px", width: "30px", marginTop: "5px", marginRight: "8px", marginLeft:"10px" }} />Planity</div>
       <div className="navbar-items">
         <a href="#boards" className="navbar-item">
           My Boards
