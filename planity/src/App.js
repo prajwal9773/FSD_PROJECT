@@ -1,7 +1,7 @@
 import React from "react";
 import Homepagelayout from "./components/Homepage/Homepagelayout";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
+import Login from "./components/TeamPage/Login";
+import Signup from "./components/TeamPage/Signup";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 

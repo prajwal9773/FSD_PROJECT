@@ -7,13 +7,9 @@
   width: 300px;
   height: 100vh;
   position: fixed;
-  left: -280px;
-  transition: left 1s ease;
+  left: 0;
   box-shadow: 0.5px 0 0 0 white;
   backdrop-filter: blur(10px);
-}
-.side:hover .sidebar {
-  left: 0;
 }
 .heading {
   padding: 10px;

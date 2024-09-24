@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "../css/Navbar.css";
+import "./css/Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
-import PlanityImage from "../img/planity.png"
+import PlanityImage from "./img/planity.png"
 const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 

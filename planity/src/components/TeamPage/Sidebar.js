@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../css/Sidebar.css";
+import "./css/Sidebar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUser,
@@ -8,7 +8,7 @@ import {
   faTable,
   faCalendar,
 } from "@fortawesome/free-solid-svg-icons";
-const Sidebar = () => {
+const Sidebar = ({ onContentChange }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => {
@@ -20,7 +20,7 @@ const Sidebar = () => {
         <p className="heading">Workspace</p>
         <div className="boardlist">
           <div className="members">
-            <div className="mem" id="box">
+            <div className="mem" id="box" onClick={() => onContentChange('members')}>
               <FontAwesomeIcon icon={faUser} className="memb" />
               <p>Members</p>
             </div>
@@ -36,19 +36,19 @@ const Sidebar = () => {
             </div>
             {isOpen && (
               <div className={`dropdown ${isOpen ? "show" : ""}`}>
-                <div className="dropdown-option">Workspace Settings</div>
-                <div className="dropdown-option">Upgrade Workspace</div>
+                <div className="dropdown-option"  onClick={() => onContentChange('workspacesettings')}>Workspace Settings</div>
+                <div className="dropdown-option" onClick={() => onContentChange('upgrade')}>Upgrade Workspace</div>
               </div>
             )}
           </div>
           <div className="views">
             <h5 className="vie">Workspace Views</h5>
             <div className="view">
-              <div className="table" id="box">
+              <div className="table" id="box" onClick={() => onContentChange('table')}>
                 <FontAwesomeIcon icon={faTable} className="tab" />
                 <p>Table</p>
               </div>
-              <div className="table" id="box">
+              <div className="table" id="box" onClick={() => onContentChange('calendar')}>
                 <FontAwesomeIcon icon={faCalendar} className="tab" />
                 <p>Calendar</p>
               </div>
