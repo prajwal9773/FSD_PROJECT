@@ -1,5 +1,6 @@
-import React from "react";
+import React from "react"
 import "./css/MiddleContent.css";
+import Calendar from "./Calendar";
 const MiddleContent = ({ content }) => {
   return (
     <div>
@@ -7,6 +8,7 @@ const MiddleContent = ({ content }) => {
         {content === "members" && <div>Welcome to the Home Page!</div>}
         {content === "Profile" && <div>This is your Profile Page.</div>}
         {content === "Settings" && <div>Here are your Settings.</div>}
+        {content === "calendar" && <Calendar />}
       </div>
     </div>
   );
