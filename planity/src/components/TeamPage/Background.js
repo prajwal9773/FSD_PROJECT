@@ -13,13 +13,13 @@ const Background = () => {
   };
   return (
     <div className="container">
-      <Navbar />
+       <Navbar />
       <div style={{ display: "flex"}}>
         <div>
         <Sidebar onContentChange={handleContentChange} />
         <MiddleContent content={content} />
         </div>
-      </div>
+      </div> 
       <div className="line line-1">
         <div
           className="wave wave1"

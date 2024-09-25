@@ -54,8 +54,9 @@ const Sidebar = ({ onContentChange }) => {
               </div>
             </div>
           </div>
-          <div className="newboard">
-            <p style={{ fontWeight: "bold" }}>Boards</p>
+          <div className="newboard" onClick={()=> onContentChange('Board')}>
+            <p style={{ fontWeight: "bold",cursor:"pointer"
+             }}>Boards</p>
             <div className="plus">+</div>
           </div>
         </div>
