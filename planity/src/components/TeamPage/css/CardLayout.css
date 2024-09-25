@@ -1,0 +1,25 @@
+.cardHead{
+    border-bottom: 1px white solid;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.head{
+    font-size: larger;
+    font-weight: 700;
+    margin-right: 20px;
+}
+.down1{
+    height:30px;
+    width: 30px;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+.down1:hover{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}

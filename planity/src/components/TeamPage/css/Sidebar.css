@@ -190,3 +190,33 @@
 #box{
   height:50px;
 }
+.ellipsis {
+  cursor: pointer;
+  padding: 10px;
+}
+.ellipsis:hover{
+  background-color: rgb(188, 84, 244);
+}
+
+.delete-option {
+  margin-left: 10px;
+}
+
+.delete-option button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.board-name{
+  display: flex;
+  justify-content: space-between;
+  padding:10px 30px 10px 30px;
+  cursor: pointer;
+}
+.board-name:hover{
+  background-color: rgb(155, 19, 167);
+  border-radius: 10px;
+}
