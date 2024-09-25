@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="profile">
         <FontAwesomeIcon icon={faBell} className="bell"/>
         
-        <div class="box-3">
+        <div class="box3">
           <div class="btn btn-three">
             <span>Upgrade to Pro</span>
           </div>
