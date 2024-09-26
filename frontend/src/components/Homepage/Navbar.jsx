@@ -9,7 +9,7 @@ export default function Navbar() {
         <p style={{ fontWeight: "bold", fontSize: "larger", color: "black" }}>Planity</p>
         </div>
         <div className="md:block mx:auto flex items-center justify-between">
-          <a href="/logi/bg">
+          <a href="/login/teamleader">
             <button className="mt-2 bg-neutral-800 text-white py-2 px-4 rounded-md mr-2">
               Login
             </button>

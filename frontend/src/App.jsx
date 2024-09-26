@@ -117,7 +117,7 @@ function App() {
         {/* Additional routes */}
         <Route path="/settings" element={<Settings />} />
         <Route path="/boards/:boardId" element={<BoardPage />} />
-        <Route path="/Home" element={<Homepagelayout/>} />
+        <Route path="/home" element={<Homepagelayout/>} />
         <Route path="/user" element={<Login />} />
       </Routes>
 
