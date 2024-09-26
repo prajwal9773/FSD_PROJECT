@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./css/Sidebar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faUser,
+  faTableColumns,
   faGear,
   faAngleDown,
   faTable,
@@ -71,12 +71,11 @@ const Sidebar = ({ onContentChange }) => {
             <div
               className="mem"
               id="box"
-              onClick={() => onContentChange("members")}
+              onClick={() => onContentChange("dashboard")}
             >
-              <FontAwesomeIcon icon={faUser} className="memb" />
-              <p>Members</p>
+              <FontAwesomeIcon icon={faTableColumns} className="memb" />
+              <p>Dashboard</p>
             </div>
-            <div className="plus">+</div>
           </div>
           <div>
             <div className="workspace" onClick={toggleDropdown} id="box">
