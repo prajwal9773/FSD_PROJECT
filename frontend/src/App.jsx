@@ -173,7 +173,7 @@ function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="/" element={<Homepagelayout />} />
         <Route path="/logi/bg" element={<Background />} />
-        <Route path="/settings" component={Settings} />
+        <Route path="/settings" element={<Settings />} />
         <Route path="/boards/:boardId" element={<BoardPage />} />
         
       </Routes>
