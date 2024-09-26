@@ -14,6 +14,7 @@ import BoardPage from "./components/TeamPage/BoardPage.jsx";
 import { Toaster } from "react-hot-toast";
 import { useAuthStore } from "./store/authStore";
 import { useEffect } from "react";
+import Login from "./user/Login.jsx";
 
 // protect routes that require authentication
 const ProtectedRoute = ({ children }) => {

@@ -77,31 +77,6 @@ const Sidebar = ({ onContentChange }) => {
               <p>Dashboard</p>
             </div>
           </div>
-          <div>
-            <div className="workspace" onClick={toggleDropdown} id="box">
-              <div className="Worksapcesettings" style={{display:"flex",alignItems:'center'}}>
-                <FontAwesomeIcon icon={faGear} className="set" />
-                <p>Workspace settings</p>
-              </div>
-              <FontAwesomeIcon icon={faAngleDown} className="down" />
-            </div>
-            {isOpen && (
-              <div className={`dropdown ${isOpen ? "show" : ""}`}>
-                <div
-                  className="dropdown-option"
-                  onClick={() => onContentChange("workspacesettings")}
-                >
-                  Workspace Settings
-                </div>
-                <div
-                  className="dropdown-option"
-                  onClick={() => onContentChange("upgrade")}
-                >
-                  Upgrade Workspace
-                </div>
-              </div>
-            )}
-          </div>
           <div className="views">
             <h5 className="vie">Workspace Views</h5>
             <div className="view">
