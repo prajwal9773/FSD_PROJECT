@@ -7,6 +7,11 @@ const Board = () => {
   const [boardName, setBoardName] = useState("");
   const [description, setDescription] = useState("");
   const [loading, setLoading] = useState(false); // Added a loading state
+  const [isOpen, setIsOpen] = useState(false);
+
+  const togglePopover = () => {
+    setIsOpen(!isOpen);
+  };
 
   // Function to open the modal
   const openModal = (templateName) => {
@@ -60,8 +65,15 @@ const Board = () => {
         <div className="workspace-header">
           <h1 className="workspace-title">Planity Workspace</h1>
           <div className="invite-btn">
-            <div className="btn btn-three">
-              <div>Invite Workspace Members</div>
+            <div className="box-3">
+                <button onClick={togglePopover} className="butt">Add Members</button>
+                {isOpen && (
+                  <div className="popover-content">
+                    <button onClick={togglePopover} className="close-popover">
+                      ✖
+                    </button>
+                  </div>
+                )}
             </div>
           </div>
         </div>
@@ -73,19 +85,31 @@ const Board = () => {
           <p className="subtext">Get going faster with the templates</p>
 
           <div className="template-gallery">
-            <div className="template-card card1" onClick={() => openModal("Basic Board")}>
+            <div
+              className="template-card card1"
+              onClick={() => openModal("Basic Board")}
+            >
               <h3>Basic Board</h3>
               <p>Template</p>
             </div>
-            <div className="template-card card2" onClick={() => openModal("Kanban")}>
+            <div
+              className="template-card card2"
+              onClick={() => openModal("Kanban")}
+            >
               <h3>Kanban</h3>
               <p>Template</p>
             </div>
-            <div className="template-card card3" onClick={() => openModal("Daily Task Management")}>
+            <div
+              className="template-card card3"
+              onClick={() => openModal("Daily Task Management")}
+            >
               <h3>Daily Task Management</h3>
               <p>Template</p>
             </div>
-            <div className="template-card card4" onClick={() => openModal("Remote Team Hub")}>
+            <div
+              className="template-card card4"
+              onClick={() => openModal("Remote Team Hub")}
+            >
               <h3>Remote Team Hub</h3>
               <p>Template</p>
             </div>
