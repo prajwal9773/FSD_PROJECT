@@ -1,0 +1,95 @@
+.card {
+  position: relative;
+  color: #ffffff; /* White text for contrast */
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden; /* Ensures rounded corners work well with background images */
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+}
+
+.card h3 {
+  font-size: 1.5em; /* Increased font size for titles */
+  margin-bottom: 10px;
+  text-align: center; /* Center the title */
+}
+
+.card p {
+  font-size: 1em; /* Consistent font size */
+  margin-bottom: 15px; /* Space between text and buttons */
+  line-height: 1.5; /* Better readability */
+}
+
+.card button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 5px; /* Spacing between buttons */
+}
+
+.card button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Deeper shadow on hover */
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: inherit; /* Use the card's background image */
+  background-size: cover; /* Cover the whole card */
+  background-position: center; /* Center the image */
+  filter: blur(8px); /* Blurred background effect */
+  z-index: -1; /* Place behind the card content */
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  justify-content: center; /* Center the cards */
+}
+
+.add-card-form {
+  margin-bottom: 20px; /* Space between the form and the cards */
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  align-items: center; /* Center form elements */
+}
+
+.add-card-form input,
+.add-card-form textarea {
+  width: 100%; /* Full width for inputs */
+  max-width: 400px; /* Limit max width for better aesthetics */
+  padding: 10px;
+  margin-bottom: 10px; /* Space between inputs */
+  border: 1px solid #ced4da; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1em; /* Consistent font size */
+}
+
+.add-card-form button {
+  background-color: #28a745; /* Green for add button */
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-card-form button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
