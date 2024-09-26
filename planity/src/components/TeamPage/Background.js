@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import MiddleContent from "./MiddleContent";
 const Background = () => {
-  const [content, setContent] = useState("Home");
+  const [content, setContent] = useState("Board");
   const handleContentChange = (newContent) => {
     setContent(newContent);
   };
