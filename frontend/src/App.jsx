@@ -11,7 +11,6 @@ import Background from "./components/TeamPage/Background";
 import Homepagelayout from "./components/Homepage/Homepagelayout";
 import Settings from "./components/TeamPage/Settings";
 import BoardPage from "./components/TeamPage/BoardPage.jsx";
-import Login from "./User/Login"
 import { Toaster } from "react-hot-toast";
 import { useAuthStore } from "./store/authStore";
 import { useEffect } from "react";
@@ -113,7 +112,7 @@ function App() {
         />
 
         {/* Route with its own specific background */}
-        <Route path="/login/teamleader" element={<Background />} />
+        <Route path="/logi/teamleader" element={<Background />} />
 		
         {/* Additional routes */}
         <Route path="/settings" element={<Settings />} />
