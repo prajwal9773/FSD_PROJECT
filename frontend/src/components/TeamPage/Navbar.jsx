@@ -5,6 +5,7 @@ import { faBell } from "@fortawesome/free-solid-svg-icons";
 import PlanityImage from "./img/planity.png";
 
 
+
 const Navbar = ({username}) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 

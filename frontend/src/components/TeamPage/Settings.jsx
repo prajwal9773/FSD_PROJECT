@@ -52,7 +52,7 @@ const  Settings = () => {
       </div>
 
       <div className="settings-option">
-        {/* <h4 style={{color:"black"}}>Change Password</h4> */}
+        <h4>Change Password</h4>
         <input
           type="password"
           value={oldPassword}
