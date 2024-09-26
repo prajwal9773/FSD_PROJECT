@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "./css/Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
-import PlanityImage from "./img/planity.png"
+import PlanityImage from "./img/planity.png";
+
+
 const Navbar = ({username}) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
@@ -35,7 +37,7 @@ const Navbar = ({username}) => {
       </div>
 
       <div className={`dropdown-menu ${dropdownOpen ? "open" : ""}`}>
-        <a href="#settings" className="dropdown-item">
+      <a href="/settings" className="dropdown-item">
           Settings
         </a>
         <a href="#logout" className="dropdown-item">

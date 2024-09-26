@@ -17,9 +17,6 @@
 //     <FloatingShape color='bg-emerald-500' size='w-48 h-48' top='70%' left='80%' delay={5} />
 //     <FloatingShape color='bg-lime-500' size='w-32 h-32' top='40%' left='-10%' delay={2} />
 
-
-
-
 //     {/* <Routes>
 //     <Route
 // 					path='/'
@@ -46,26 +43,18 @@
 // 					}
 // 				/>
 //     </Routes>
-    
 
 //  */}
 //        <Routes>
 //         <Route path ='/' element ={"Home"}/>
 //         <Route path ='/signup' element = {<SignUpPage/>}/>
 //         <Route path ='/login' element = {<LoginPage/>}/>
-        
+
 //        </Routes>
-
-
 
 // </div>
 
 //     </>
-
-    
-
-    
-
 
 //   )
 // }
@@ -84,7 +73,8 @@ import ResetPasswordPage from "./pages/ResetPasswordPage";
 
 import LoadingSpinner from "./components/LoadingSpinner";
 import Background from "./components/TeamPage/Background";
-import Homepagelayout from "./components/Homepage/Homepagelayout"
+import Homepagelayout from "./components/Homepage/Homepagelayout";
+import Settings from "./components/TeamPage/Settings";
 
 import { Toaster } from "react-hot-toast";
 import { useAuthStore } from "./store/authStore";
@@ -93,50 +83,50 @@ import { HomeIcon } from "lucide-react";
 
 // protect routes that require authentication
 const ProtectedRoute = ({ children }) => {
-	const { isAuthenticated, user } = useAuthStore();
+  const { isAuthenticated, user } = useAuthStore();
 
-	if (!isAuthenticated) {
-		return <Navigate to='/login' replace />;
-	}
+  if (!isAuthenticated) {
+    return <Navigate to="/login" replace />;
+  }
 
-	if (!user.isVerified) {
-		return <Navigate to='/verify-email' replace />;
-	}
+  if (!user.isVerified) {
+    return <Navigate to="/verify-email" replace />;
+  }
 
-	return children;
+  return children;
 };
 
 // redirect authenticated users to the home page
 const RedirectAuthenticatedUser = ({ children }) => {
-	const { isAuthenticated, user } = useAuthStore();
+  const { isAuthenticated, user } = useAuthStore();
 
-	if (isAuthenticated && user.isVerified) {
-		return <Navigate to='/' replace />;
-	}
+  if (isAuthenticated && user.isVerified) {
+    return <Navigate to="/" replace />;
+  }
 
-	return children;
+  return children;
 };
 
 function App() {
-	const { isCheckingAuth, checkAuth } = useAuthStore();
+  const { isCheckingAuth, checkAuth } = useAuthStore();
 
-	useEffect(() => {
-		checkAuth();
-	}, [checkAuth]);
+  useEffect(() => {
+    checkAuth();
+  }, [checkAuth]);
 
-	if (isCheckingAuth) return <LoadingSpinner />;
+  if (isCheckingAuth) return <LoadingSpinner />;
 
-	return (
-		<div
-	// 		className='min-h-screen bg-gradient-to-br
+  return (
+    <div
+    // 		className='min-h-screen bg-gradient-to-br
     // from-gray-900 via-emerald-900 to-blue-900 flex items-center justify-center relative overflow-hidden'
-		>
-			{/* <FloatingShape color='bg-green-500' size='w-64 h-64' top='-5%' left='10%' delay={0} />
+    >
+      {/* <FloatingShape color='bg-green-500' size='w-64 h-64' top='-5%' left='10%' delay={0} />
 			<FloatingShape color='bg-emerald-500' size='w-48 h-48' top='70%' left='80%' delay={5} />
 			<FloatingShape color='bg-lime-500' size='w-32 h-32' top='40%' left='-10%' delay={2} /> */}
 
-			<Routes>
-				{/* <Route
+      <Routes>
+        {/* <Route
 					path='/'
 					element={
 						<ProtectedRoute>
@@ -179,13 +169,16 @@ function App() {
 					}
 				/>
 				catch all routes */}
-				<Route path='*' element={<Navigate to='/' replace />} />
-				<Route path='/' element={<Homepagelayout />} />
-				<Route path="/logi/bg" element={<Background />} />
-			</Routes>
-			<Toaster />
-		</div>
-	);
+        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="/" element={<Homepagelayout />} />
+        <Route path="/logi/bg" element={<Background />} />
+        <Route path="/settings" component={Settings} />
+        
+        
+      </Routes>
+      <Toaster />
+    </div>
+  );
 }
 
 export default App;
