@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from "dotenv";
-import { connectDB } from './db/connectdb.js';
+import { connectDB } from './db/connectDB.js';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import boardRoutes from "./routes/boardRoutes.js";

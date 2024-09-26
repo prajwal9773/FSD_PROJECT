@@ -1,7 +1,6 @@
 import {User} from "../models/user_model.js";
 import bcryptjs from "bcryptjs";
 import crypto from "crypto";
-// import {generateVerificationCode} from "../utils/generateVerificationCode.js";
 import {generateTokenAndSetCookie} from "../utils/generateTokenAndSetCookie.js"
 import { sendVerificationEmail } from "../Mail/emails.js";
 import {sendWelcomeEmail, sendResetPasswordMail, sendResetSuccessMail} from "../Mail/emails.js"
