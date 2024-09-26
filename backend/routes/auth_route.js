@@ -10,14 +10,10 @@ router.put('/edit-name', verifyToken, async (req, res) => {
     console.log("Edit Name endpoint hit");
     try {
         const { name } = req.body;
-        const userId = req.userId; // Extract user ID from the verified token
-
-        // Update user's name
+        const userId = req.userId; 
         const user = await User.findById(userId);
         user.name = name;
         await user.save();
-
-        // Generate token and set cookie
         generateTokenAndSetCookie(res, userId);
 
         res.status(200).json({ message: 'Name updated successfully!' });
@@ -29,25 +25,16 @@ router.put('/edit-name', verifyToken, async (req, res) => {
 router.put('/change-password', verifyToken, async (req, res) => {
     try {
         const { oldPassword, newPassword } = req.body;
-        const userId = req.userId; // Extract user ID from the verified token
-
-        // Find the user by ID
+        const userId = req.userId; 
         const user = await User.findById(userId);
-
-        // Compare old password
         const isMatch = await bcrypt.compare(oldPassword, user.password);
         if (!isMatch) {
             return res.status(400).json({ message: 'Incorrect old password' });
         }
-
-        // Hash new password and update
         const salt = await bcrypt.genSalt(10);
         const hashedPassword = await bcrypt.hash(newPassword, salt);
-
         user.password = hashedPassword;
         await user.save();
-
-        // Generate token and set cookie
         generateTokenAndSetCookie(res, userId);
 
         res.status(200).json({ message: 'Password updated successfully!' });
