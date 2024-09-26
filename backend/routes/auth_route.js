@@ -7,6 +7,7 @@ import { User} from '../models/user_model.js';
 
 const router = express.Router();
 router.put('/edit-name', verifyToken, async (req, res) => {
+    console.log("Edit Name endpoint hit");
     try {
         const { name } = req.body;
         const userId = req.userId; // Extract user ID from the verified token
