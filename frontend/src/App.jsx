@@ -81,6 +81,7 @@ import { Toaster } from "react-hot-toast";
 import { useAuthStore } from "./store/authStore";
 import { useEffect } from "react";
 import { HomeIcon } from "lucide-react";
+import Login from "./user/Login.jsx";
 
 // protect routes that require authentication
 const ProtectedRoute = ({ children }) => {
@@ -175,7 +176,7 @@ function App() {
         <Route path="/logi/bg" element={<Background />} />
         <Route path="/settings" element={<Settings />} />
         <Route path="/boards/:boardId" element={<BoardPage />} />
-        
+        <Route path="/user" element={<Login />} />
       </Routes>
       <Toaster />
     </div>

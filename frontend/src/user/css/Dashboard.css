@@ -1,0 +1,30 @@
+.dashboard {
+    padding: 20px;
+  }
+  
+  .stats {
+    gap: 20px;
+  }
+  
+  .stat {
+    background-color: black;
+    padding: 10px;
+    width: 1000px;
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .board-list, .card-list {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  

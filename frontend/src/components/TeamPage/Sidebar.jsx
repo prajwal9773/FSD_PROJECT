@@ -118,7 +118,7 @@ const Sidebar = ({ onContentChange }) => {
                 className="table"
                 id="box"
                 onClick={() => onContentChange("calendar")}
-                style={{display:"flex",alignItems:'center'}}
+                
               >
                 <FontAwesomeIcon icon={faCalendar} className="tab" />
                 <p>Calendar</p>
