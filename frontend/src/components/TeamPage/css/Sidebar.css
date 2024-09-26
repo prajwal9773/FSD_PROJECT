@@ -28,7 +28,6 @@
   justify-content: space-between;
   align-items: center;
   margin-right: 10px;
-  transition: background-color 0.8s ease;
   cursor: pointer;
   margin-top: 10px;
 }
@@ -62,7 +61,7 @@
   align-items: center;
   margin-right: 10px;
   cursor: pointer;
-  transition: background-color 0.8s ease;
+  margin-top: 10px;
 }
 .settings {
   display: flex;

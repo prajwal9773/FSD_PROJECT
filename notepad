@@ -67,7 +67,7 @@ const Sidebar = ({ onContentChange }) => {
       <div className="sidebar">
         <p className="heading">Workspace</p>
         <div className="boardlist">
-          <div className="members">
+          {/* <div className="members">
             <div
               className="mem"
               id="box"
@@ -76,10 +76,13 @@ const Sidebar = ({ onContentChange }) => {
               <FontAwesomeIcon icon={faTableColumns} className="memb" />
               <p>Dashboard</p>
             </div>
-          </div>
+          </div> */}
           <div>
             <div className="workspace" onClick={toggleDropdown} id="box">
-              <div className="Worksapcesettings" style={{display:"flex",alignItems:'center'}}>
+              <div
+                className="Worksapcesettings"
+                style={{ display: "flex", alignItems: "center" }}
+              >
                 <FontAwesomeIcon icon={faGear} className="set" />
                 <p>Workspace settings</p>
               </div>
@@ -109,7 +112,7 @@ const Sidebar = ({ onContentChange }) => {
                 className="table"
                 id="box"
                 onClick={() => onContentChange("table")}
-                style={{display:"flex",alignItems:'center'}}
+                style={{ display: "flex", alignItems: "center" }}
               >
                 <FontAwesomeIcon icon={faTable} className="tab" />
                 <p>Table</p>
@@ -118,7 +121,7 @@ const Sidebar = ({ onContentChange }) => {
                 className="table"
                 id="box"
                 onClick={() => onContentChange("calendar")}
-                style={{display:"flex",alignItems:'center'}}
+                style={{ display: "flex", alignItems: "center" }}
               >
                 <FontAwesomeIcon icon={faCalendar} className="tab" />
                 <p>Calendar</p>
@@ -136,7 +139,11 @@ const Sidebar = ({ onContentChange }) => {
           <div className="board-names">
             {boards.length > 0 ? (
               boards.map((board) => (
-                <div key={board._id} className="board-name" onClick={() => onContentChange(board.name)}>
+                <div
+                  key={board._id}
+                  className="board-name"
+                  onClick={() => onContentChange(board.name)}
+                >
                   <div>
                     <span>{board.name}</span>
                   </div>

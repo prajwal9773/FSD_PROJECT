@@ -75,6 +75,7 @@ import LoadingSpinner from "./components/LoadingSpinner";
 import Background from "./components/TeamPage/Background";
 import Homepagelayout from "./components/Homepage/Homepagelayout";
 import Settings from "./components/TeamPage/Settings";
+import BoardPage from './components/TeamPage/BoardPage.jsx';
 
 import { Toaster } from "react-hot-toast";
 import { useAuthStore } from "./store/authStore";
@@ -172,8 +173,8 @@ function App() {
         <Route path="*" element={<Navigate to="/" replace />} />
         <Route path="/" element={<Homepagelayout />} />
         <Route path="/logi/bg" element={<Background />} />
-        <Route path="/settings" component={Settings} />
-        
+        <Route path="/settings" element={<Settings />} />
+        <Route path="/boards/:boardId" element={<BoardPage />} />
         
       </Routes>
       <Toaster />

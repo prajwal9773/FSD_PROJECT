@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import { connectDB } from './db/connectdb.js';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
-
+import boardRoutes from "./routes/boardRoutes.js";
 
 import authRoutes from "./routes/auth_route.js";
 dotenv.config();
@@ -23,7 +23,7 @@ app.use(cors({origin:"http://localhost:5173", credentials:true}));
 
 
 app.use('/api/auth', authRoutes);
- 
+app.use("/api/boards", boardRoutes);
 
 
 app.listen(PORT, ()=>{
