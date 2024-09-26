@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import "./css/Settings.css";
 import axios from 'axios';
 
-const Settings = () => {
+
+const  Settings = () => {
   const [name, setName] = useState('');
   const [oldPassword, setOldPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
@@ -50,7 +52,7 @@ const Settings = () => {
       </div>
 
       <div className="settings-option">
-        <h4>Change Password</h4>
+        {/* <h4 style={{color:"black"}}>Change Password</h4> */}
         <input
           type="password"
           value={oldPassword}
@@ -66,9 +68,8 @@ const Settings = () => {
         <button onClick={handlePasswordChange}>Change Password</button>
       </div>
 
-      <div className="settings-option">
-        <h4>Logout</h4>
-        <button onClick={handleLogout}>Logout</button>
+      <div className="option">
+        <button className ="logot" onClick={handleLogout}>Logout</button>
       </div>
 
       {message && <p>{message}</p>}
