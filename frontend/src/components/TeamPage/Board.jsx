@@ -128,14 +128,6 @@ const Board = () => {
               <option>Choose a collection</option>
             </select>
           </div>
-          <div className="search-bar-container">
-            <input
-              type="text"
-              placeholder="Search boards..."
-              className="search-input"
-            />
-            <button className="search-button">Search</button>
-          </div>
         </div>
 
         {/* Modal for creating a new board */}

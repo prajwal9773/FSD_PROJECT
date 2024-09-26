@@ -79,7 +79,7 @@ const Sidebar = ({ onContentChange }) => {
           </div>
           <div>
             <div className="workspace" onClick={toggleDropdown} id="box">
-              <div className="settings">
+              <div className="Worksapcesettings">
                 <FontAwesomeIcon icon={faGear} className="set" />
                 <p>Workspace settings</p>
               </div>
