@@ -10,7 +10,7 @@ const MiddleContent = ({ content, onAddBoard }) => {
         {content === "members" && <div>Welcome to the Members Page!</div>}
         {content === "Profile" && <div>This is your Profile Page.</div>}
         {content === "Settings" && <div>Here are your Settings.</div>}
-        {typeof content === "string" && content !== "members" && content !== "Profile" && content !== "Settings" && content === "calendar" && (
+        {typeof content === "string" && content !== "members" && content !== "Profile" && content !== "Settings" && content !== "calendar" && (
           <CardLayout boardName = {content} />
         )}
         {/* Pass onAddBoard function to the Board component */}

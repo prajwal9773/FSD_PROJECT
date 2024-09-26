@@ -142,6 +142,7 @@ const Board = () => {
         {isModalOpen && (
           <div className="modal">
             <div className="modal-content">
+              {/* Close button */}
               <span className="close" onClick={closeModal}>
                 &times;
               </span>

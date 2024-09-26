@@ -49,11 +49,11 @@
   color: white;
   cursor: pointer;
   transition: transform 0.2s ease;
-  margin-top:20px;
 }
 
 .template-card:hover {
   transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .template-card h3 {
@@ -61,28 +61,26 @@
 }
 
 /* Template card backgrounds for each card */
+.card1, .card2, .card3, .card4 {
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px;
+}
+
 .card1 {
   background-image: url("../img/bg1.png");
-  background-size: cover;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px;
 }
 
 .card2 {
   background-image: url("../img/bg2.jpg");
-  background-size: cover;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px;
 }
 
 .card3 {
   background-image: url("../img/bg3.jpg");
-  background-size: cover;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px;
 }
 
 .card4 {
   background-image: url("../img/bg4.jpg");
-  background-size: cover;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px;
 }
 
 /* Filter section styling */
@@ -116,6 +114,21 @@
   padding: 10px;
   border-radius: 4px;
   border: 1px solid #5f5f5f;
+}
+
+/* Button styles */
+.search-button {
+  background-color: #5f18b5;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #7a2cdb;
 }
 
 /* Box for inviting workspace members */
@@ -161,6 +174,7 @@
   max-width: 500px;
   width: 100%;
   text-align: left;
+  position: relative;
 }
 
 .modal-content label {
@@ -194,6 +208,7 @@
   background-color: #7a2cdb;
 }
 
+/* Close button for the modal */
 .modal-content .close {
   position: absolute;
   top: 10px;
@@ -201,6 +216,11 @@
   font-size: 24px;
   cursor: pointer;
   color: white;
+  transition: color 0.3s ease;
+}
+
+.modal-content .close:hover {
+  color: #ccc;
 }
 
 /* popover.css */
