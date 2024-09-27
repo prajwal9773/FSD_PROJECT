@@ -1,0 +1,12 @@
+.components-container {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-container {
+    width: 23rem;
+}
+
+.user-panel-main-container {
+    overflow: hidden;
+}
