@@ -15,13 +15,14 @@ import { Toaster } from "react-hot-toast";
 import { useAuthStore } from "./store/authStore";
 import { useEffect } from "react";
 import Login from "./user/Login.jsx";
+import SelectionPage from "./components/SelectionPage.jsx";
 
 // protect routes that require authentication
 const ProtectedRoute = ({ children }) => {
   const { isAuthenticated, user } = useAuthStore();
 
   if (!isAuthenticated) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/" replace />;
   }
 
   if (!user.isVerified) {
@@ -36,7 +37,7 @@ const RedirectAuthenticatedUser = ({ children }) => {
   const { isAuthenticated, user } = useAuthStore();
 
   if (isAuthenticated && user.isVerified) {
-    return <Navigate to="/" replace />;
+    return <Navigate to="/selection" replace />;
   }
 
   return children;
@@ -70,7 +71,7 @@ function App() {
 
       <Routes>
         <Route
-          path="/"
+          path="/da"
           element={
             <ProtectedRoute>
               <DashboardPage />
@@ -113,11 +114,11 @@ function App() {
 
         {/* Route with its own specific background */}
         <Route path="/logi/teamleader" element={<Background />} />
+        <Route path="/selection" element={<SelectionPage />} />
 		
         {/* Additional routes */}
-        <Route path="/settings" element={<Settings />} />
         <Route path="/boards/:boardId" element={<BoardPage />} />
-        <Route path="/home" element={<Homepagelayout/>} />
+        <Route path="/" element={<Homepagelayout/>} />
         <Route path="/user" element={<Login />} />
       </Routes>
 

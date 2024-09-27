@@ -38,7 +38,7 @@ const Navbar = ({username}) => {
       </div>
 
       <div className={`dropdown-menu ${dropdownOpen ? "open" : ""}`}>
-      <a href="/settings" className="dropdown-item">
+      <a href="/da" className="dropdown-item">
           Settings
         </a>
         <a href="#logout" className="dropdown-item">
