@@ -15,7 +15,7 @@ const CardLayout = ({ boardName }) => {
         <FontAwesomeIcon icon={faAngleDown} style={{color:"black"}} />
         </div>
       </div>
-      <div className="App">
+      <div className="App" style={{width:"1000px"}}>
         <CardContainer />
       </div>
     </DndProvider>

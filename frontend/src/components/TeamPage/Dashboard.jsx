@@ -86,7 +86,7 @@ const Dashboard = () => {
         
       </div>
 
-      {/* Stock Chart Section */}
+      {/* Stock Chart Section
       <div className="stock-chart">
         <h2 style={{color:"black"}}>Stock Prices</h2>
         {stockData ? (
@@ -94,7 +94,7 @@ const Dashboard = () => {
         ) : (
           <p>Loading stock data...</p>
         )}
-      </div>
+      </div> */}
       <div className="stat" style={{height:"50px"}}>
           <h3>Total Cards: {cards.length}</h3>
         </div>

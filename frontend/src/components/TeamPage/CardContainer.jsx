@@ -52,7 +52,7 @@ const handleUpdate = async (updatedCard) => {
     return (
         <div>
             <AddCardForm onAdd={addCard} />
-            <div className="card-container">
+            <div className="card-container" style={{width:"600px"}}>
                 {cards.map((card, index) => (
                     <Card 
                         key={card._id} 
