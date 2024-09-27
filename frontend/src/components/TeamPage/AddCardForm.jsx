@@ -18,11 +18,13 @@ const AddCardForm = ({ onAdd }) => {
                 placeholder="Title"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
+                style={{color:'black'}}
             />
             <textarea
                 placeholder="Description"
                 value={description}
                 onChange={(e) => setDescription(e.target.value)}
+                style={{color:'black'}}
             />
             <button type="submit">Add Card</button>
         </form>

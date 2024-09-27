@@ -75,12 +75,14 @@ const Card = ({ data, index, moveCard, onDelete, onUpdate }) => {
             value={updatedData.title}
             onChange={handleChange}
             placeholder="Title"
+            style={{color:'black'}}
           />
           <textarea
             name="content"
             value={updatedData.content}
             onChange={handleChange}
             placeholder="Content"
+            style={{color:'black'}}
           />
           <button onClick={handleUpdate} disabled={loading}>
             {loading ? 'Saving...' : 'Save'}
