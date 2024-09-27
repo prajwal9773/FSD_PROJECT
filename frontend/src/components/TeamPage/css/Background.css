@@ -31,7 +31,7 @@ width: 100%;
 overflow: hidden;
 height: 100%;
 background: rgb(73,0,163);
-background: linear-gradient(30deg, rgba(73,0,163,1) 0%, rgba(185,0,233,1) 80%, rgba(220,0,255,1) 96%, rgba(175,0,255,1) 96%, rgba(255,0,244,1) 100%, rgba(15,0,47,1) 100%, rgba(255,0,250,1) 100%, rgba(255,0,241,1) 100%);
+background: linear-gradient(30deg, rgba(73,0,163,1) 0%, rgba(145,0,185,1) 0%, rgba(6,125,46,1) 0%, rgba(3,108,38,1) 37%, rgba(54,225,111,1) 80%, rgba(127,207,44,1) 93%, rgba(0,255,63,1) 100%, rgba(6,116,59,1) 100%, rgba(255,0,244,1) 100%, rgba(15,0,47,1) 100%, rgba(255,0,250,1) 100%, rgba(9,179,14,1) 100%);
 }
 .line-1 {
 z-index: 15;
