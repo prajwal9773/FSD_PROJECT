@@ -9,13 +9,19 @@ import ResetPasswordPage from "./pages/ResetPasswordPage";
 import LoadingSpinner from "./components/LoadingSpinner";
 import Background from "./components/TeamPage/Background";
 import Homepagelayout from "./components/Homepage/Homepagelayout";
-import Settings from "./components/TeamPage/Settings";
 import BoardPage from "./components/TeamPage/BoardPage.jsx";
 import { Toaster } from "react-hot-toast";
 import { useAuthStore } from "./store/authStore";
 import { useEffect } from "react";
 import Login from "./user/Login.jsx";
 import SelectionPage from "./components/SelectionPage.jsx";
+import User from './components/roles/user/User';
+import Admin from "./components/roles/admin/Admin";
+// import SignUpPage1 from './components/pages/SignUpPage/SignUpPage.jsx';
+// import LoginPage1 from './components/pages/LoginPage/LoginPage.jsx';
+import AdminAccess from './components/pages/AdminAccessPage/AdminAccessPage.jsx';
+// import AdminPanel from './components/AdminPanel.jsx';
+// import Sidebar from './components/sidebar.jsx';
 
 // protect routes that require authentication
 const ProtectedRoute = ({ children }) => {
@@ -120,6 +126,12 @@ function App() {
         <Route path="/boards/:boardId" element={<BoardPage />} />
         <Route path="/" element={<Homepagelayout/>} />
         <Route path="/user" element={<Login />} />
+        {/* <Route path="/sign" element={<SignUpPage1 />} /> */}
+        <Route path="/useer" element={<User />} />
+              {/* <Route path="/User/Login" element={<LoginPage1 />} /> */}
+              <Route path="/Admin" element={<Admin />} />
+
+              <Route path='/User/AdminAccess' element={<AdminAccess />} />
       </Routes>
 
       {/* Toaster for notifications */}

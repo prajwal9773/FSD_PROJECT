@@ -1,0 +1,108 @@
+.admin-access-container {
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.admin-access-content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-access-error-description {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(223, 218, 218);
+
+}
+
+
+
+.admin-logo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1rem;
+
+
+}
+
+
+.admin-access-errors-container {
+    height: 12rem;
+}
+
+.admin-access-form {
+    border: 1px solid;
+    margin: 30px;
+    border: none;
+    line-height: 1rem;
+}
+
+.admin-access-form-border {
+    border-width: 3px;
+    border: 1px solid;
+    border-radius: 1rem;
+    border-color: rgb(97, 77, 51);
+    background-color: rgb(48, 48, 47);
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-access-input {
+    width: 25rem;
+    height: 2rem;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    border-bottom: 1px solid;
+    border-color: white;
+    background-color: transparent;
+}
+
+.label {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(223, 218, 218);
+}
+
+.admin-access-logo span {
+    font-size: 20rem;
+    font-weight: 300;
+    color: rgb(223, 218, 218);
+}
+
+.admin-access-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(223, 218, 218);
+    display: flex;
+    justify-content: start;
+
+}
+
+.admin-checkbox-container {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-input {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.checkbox-para {
+    color: rgb(223, 218, 218);
+    font-size: 1.5rem;
+}
+
+.checkbox-description p {
+    color: rgb(150, 144, 144);
+    font-size: 1.31rem;
+
+}

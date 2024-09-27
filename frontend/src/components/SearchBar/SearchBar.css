@@ -1,0 +1,39 @@
+.search-bar-container {
+    width: 100%;
+    height: 6rem;
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-border {
+    width: 38rem;
+    height: 2.5rem;
+    border-radius: 1rem;
+    border: 1px solid;
+    border-color: rgb(97, 77, 51);
+    border-width: 3px;
+}
+
+.search-bar {
+    font-size: 1.5rem;
+    width: 32rem;
+    border: none;
+    height: 2rem;
+    background-color: transparent;
+    border-radius: 1rem;
+    color: white;
+    outline: none;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+    color: white;
+}
+
+.change {
+    background-color: black;
+}

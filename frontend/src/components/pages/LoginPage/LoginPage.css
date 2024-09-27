@@ -1,0 +1,87 @@
+.sign-up-container {
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.login-content-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-error-description {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(223, 218, 218);
+
+}
+
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1rem;
+
+
+}
+
+
+.login-errors-container {
+    height: 12rem;
+}
+
+.login-form {
+    border: 1px solid;
+    margin: 30px;
+    border: none;
+    line-height: 1rem;
+}
+
+.login-form-border {
+    border-width: 3px;
+    border: 1px solid;
+    border-radius: 1rem;
+    border-color: rgb(97, 77, 51);
+    background-color: rgb(48, 48, 47);
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-input {
+    width: 25rem;
+    height: 2rem;
+    outline: none;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    border-bottom: 1px solid;
+    border-color: white;
+    background-color: transparent;
+}
+
+.label {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(223, 218, 218);
+}
+
+.login-page-logo span {
+    font-size: 20rem;
+    font-weight: 300;
+    color: rgb(223, 218, 218);
+}
+
+.login-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgb(223, 218, 218);
+    display: flex;
+    justify-content: start;
+
+}

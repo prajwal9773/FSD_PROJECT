@@ -1,0 +1,22 @@
+table,
+th,
+td {
+    border-collapse: collapse;
+    border: 1px solid;
+    padding: 1rem;
+    border-color: rgb(97, 77, 51);
+    background-color: rgb(48, 48, 47);
+    color: white;
+    border-radius: 1rem;
+    outline: none;
+}
+
+table {
+    width: 70rem;
+}
+
+.changes {
+    background-color: black;
+}
+
+/* //////////SwitchButton//////////// */

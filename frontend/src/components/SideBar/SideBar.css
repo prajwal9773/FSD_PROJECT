@@ -1,0 +1,97 @@
+.main-container {
+    height: 80rem;
+    width: 18rem;
+    border: 1.5px solid;
+    border-width: 3px;
+    border-radius: 1rem;
+    background-color: rgb(48, 48, 47);
+    border-color: rgb(97, 77, 51);
+}
+
+.flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signature {
+    width: 100%;
+    border-radius: 1rem;
+    border-color: rgb(97, 77, 51);
+    height: 18rem;
+    border: 1px solid;
+}
+
+#circle {
+    border-color: rgb(97, 77, 51);
+}
+
+#signature {
+    border-color: rgb(97, 77, 51);
+}
+
+.circle {
+    width: 15rem;
+    height: 15rem;
+    border-color: rgb(97, 77, 51);
+    border-radius: 360%;
+    border: 1px solid;
+}
+
+.main-heading {
+    font-size: 1.9rem;
+    cursor: pointer;
+    color: rgb(223, 218, 218);
+}
+
+.side-bar-btns {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: rgb(223, 218, 218);
+    font-weight: 700;
+}
+
+.active-index {
+    background-color: rgb(43, 44, 44) !important;
+}
+
+.btns li {
+    width: 100%;
+    list-style: none;
+    margin-top: 0.9rem;
+    cursor: pointer;
+}
+
+.btns {
+    width: 100%;
+}
+
+.paragraph {
+    margin-top: 4rem;
+}
+
+.para {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(223, 218, 218);
+    font-style: italic;
+}
+
+.img-container {
+    width: 100%;
+    margin-top: 6rem;
+}
+
+.img-container img {
+    animation: App-logo-spin infinite 20s linear;
+}
+
+@keyframes imgAnimate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
